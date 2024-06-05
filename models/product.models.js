@@ -6,7 +6,8 @@ const productSchema = new mongoose.Schema({
         ref: "Product"
     },
     nama: String,
-    alamat: String,
+    harga: Number,
+    jumlah: Number,
 })
 
 const Product = mongoose.model("Product", productSchema)
