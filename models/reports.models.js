@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
 const reportSchema = new mongoose.Schema({
-    jumlah: Number,
+    jumlah:Number,
     stokMasuk: Number,
     stokKeluar: Number,
-    productID: { type: mongoose.Schema.Types.ObjectId, 
+    barangID: { type: mongoose.Schema.Types.ObjectId, 
         ref: 'Product' },
     suplierID: { type: mongoose.Schema.Types.ObjectId, 
         ref: 'Suplier' },
